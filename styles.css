@@ -7,7 +7,6 @@
   --muted: #eaf0ff;
   --good: #168f4a;
   --bad: #b32727;
-  --soft-border: #c7d5ff;
 }
 
 * {
@@ -43,7 +42,6 @@ body {
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -87,20 +85,6 @@ footer a {
   background: var(--accent-dark);
 }
 
-.btn:disabled {
-  cursor: not-allowed;
-  opacity: 0.55;
-}
-
-.secondary {
-  background: #e2e9ff;
-  color: #22396f;
-}
-
-.secondary:hover {
-  background: #d3deff;
-}
-
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -134,8 +118,6 @@ h2 {
   border-radius: 0.9rem;
   padding: 1rem;
   box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
-  display: flex;
-  flex-direction: column;
 }
 
 .card h3 {
@@ -143,60 +125,16 @@ h2 {
 }
 
 .card ul {
-  margin: 0.6rem 0 1rem;
+  margin: 0.6rem 0 0;
   padding-left: 1.1rem;
 }
 
-.card .lesson-btn {
-  margin-top: auto;
-}
-
-.lesson-viewer-box,
-.practice-box,
-.roadmap {
+.practice-box {
   background: var(--card);
   border-radius: 0.9rem;
   padding: 1.2rem;
+  max-width: 520px;
   box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
-}
-
-.lesson-viewer-box {
-  max-width: 720px;
-  border: 1px solid var(--soft-border);
-}
-
-.lesson-kicker {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #3b548c;
-  font-weight: 700;
-}
-
-#lesson-title {
-  margin: 0.2rem 0 0.45rem;
-}
-
-.lesson-block {
-  background: #f5f8ff;
-  border: 1px solid #d8e1ff;
-  border-radius: 0.75rem;
-  padding: 0.85rem;
-  margin-top: 0.85rem;
-}
-
-.lesson-block h4 {
-  margin: 0 0 0.35rem;
-}
-
-.viewer-actions {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.practice-box {
-  max-width: 560px;
 }
 
 .practice-box input {
@@ -210,7 +148,7 @@ h2 {
 
 #feedback {
   min-height: 1.25rem;
-  margin: 0.9rem 0 0.2rem;
+  margin-top: 0.7rem;
   font-weight: 700;
 }
 
@@ -222,16 +160,14 @@ h2 {
   color: var(--bad);
 }
 
-#score {
-  margin: 0;
-  color: #233c74;
-  font-weight: 600;
-}
-
 .roadmap {
   display: grid;
   gap: 0.55rem;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 0.9rem;
   max-width: 560px;
+  box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
 }
 
 .roadmap label {

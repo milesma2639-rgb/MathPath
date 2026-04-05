@@ -18,7 +18,6 @@
         <div class="logo">📘 MathPath Academy</div>
         <div class="nav-links">
           <a href="#classes">Classes</a>
-          <a href="#lesson-viewer">Lesson Viewer</a>
           <a href="#practice">Practice</a>
           <a href="#roadmap">Roadmap</a>
         </div>
@@ -28,8 +27,8 @@
         <h1>Learn math step by step — even if you feel behind</h1>
         <p>
           Start with pre-algebra basics and build up to algebra confidence.
-          Click into any class for a mini lesson, examples, and a "what to do
-          next" action plan.
+          Short lessons, simple examples, and supportive practice made for
+          beginners.
         </p>
         <a class="btn" href="#classes">Start Learning</a>
       </div>
@@ -39,10 +38,9 @@
       <section class="section" id="classes">
         <h2>Class Tracks</h2>
         <p class="section-subtitle">
-          Click <strong>Open lesson</strong> on any card to load it in the lesson
-          viewer below.
+          Follow these classes in order. Each class has a goal, clear examples,
+          and mini checks.
         </p>
-
         <div class="card-grid">
           <article class="card">
             <h3>Class 1: Number Skills</h3>
@@ -55,7 +53,6 @@
               <li>Use PEMDAS without panic</li>
               <li>Check answers quickly</li>
             </ul>
-            <button class="btn lesson-btn" data-lesson-id="0">Open lesson</button>
           </article>
 
           <article class="card">
@@ -66,7 +63,6 @@
               <li>Percent increase/decrease</li>
               <li>Word problem strategies</li>
             </ul>
-            <button class="btn lesson-btn" data-lesson-id="1">Open lesson</button>
           </article>
 
           <article class="card">
@@ -79,7 +75,6 @@
               <li>Substitute values for variables</li>
               <li>Combine like terms</li>
             </ul>
-            <button class="btn lesson-btn" data-lesson-id="2">Open lesson</button>
           </article>
 
           <article class="card">
@@ -90,7 +85,6 @@
               <li>Equation checking</li>
               <li>Simple equation word problems</li>
             </ul>
-            <button class="btn lesson-btn" data-lesson-id="3">Open lesson</button>
           </article>
 
           <article class="card">
@@ -104,7 +98,6 @@
               <li>Understand slope and intercept</li>
               <li>Model real-life trends</li>
             </ul>
-            <button class="btn lesson-btn" data-lesson-id="4">Open lesson</button>
           </article>
 
           <article class="card">
@@ -118,60 +111,22 @@
               <li>Timed confidence drills</li>
               <li>Final readiness checklist</li>
             </ul>
-            <button class="btn lesson-btn" data-lesson-id="5">Open lesson</button>
           </article>
-        </div>
-      </section>
-
-      <section class="section" id="lesson-viewer">
-        <h2>Interactive Lesson Viewer</h2>
-        <p class="section-subtitle">
-          This section updates when you click a class card.
-        </p>
-
-        <div class="lesson-viewer-box">
-          <p class="lesson-kicker" id="lesson-kicker">Class 1 of 6</p>
-          <h3 id="lesson-title">Number Skills</h3>
-          <p id="lesson-goal">
-            Build confidence with negatives, positives, and operation order.
-          </p>
-
-          <div class="lesson-block">
-            <h4>Quick Example</h4>
-            <p id="lesson-example">-3 + 8 = 5 because you move 8 steps right from -3.</p>
-          </div>
-
-          <div class="lesson-block">
-            <h4>Try This</h4>
-            <p id="lesson-try">Evaluate: 7 + 2 × (5 - 3)</p>
-          </div>
-
-          <div class="viewer-actions">
-            <button class="btn secondary" id="prev-lesson">Previous</button>
-            <button class="btn" id="next-lesson">Next</button>
-          </div>
         </div>
       </section>
 
       <section class="section muted" id="practice">
         <h2>Quick Practice Corner</h2>
         <p class="section-subtitle">
-          Work through multiple questions. Click <strong>Next question</strong>
-          to keep practicing.
+          Try this warm-up question. No pressure — mistakes are part of learning.
         </p>
 
         <div class="practice-box">
           <p id="question">Solve: 3x + 5 = 20</p>
-          <label for="answer">Your answer:</label>
+          <label for="answer">Your answer for x:</label>
           <input id="answer" type="number" placeholder="Type a number" />
-
-          <div class="viewer-actions">
-            <button class="btn" id="check-btn">Check Answer</button>
-            <button class="btn secondary" id="next-question-btn">Next question</button>
-          </div>
-
+          <button class="btn" id="check-btn">Check Answer</button>
           <p id="feedback" aria-live="polite"></p>
-          <p id="score">Score: 0 correct out of 0 attempts.</p>
         </div>
       </section>
 
@@ -211,7 +166,7 @@
     <footer>
       <p>
         You don’t have to be “good at math” to improve — you just need a clear
-        path and consistent practice.
+        path and practice.
       </p>
       <a href="#top">Back to top ↑</a>
     </footer>
