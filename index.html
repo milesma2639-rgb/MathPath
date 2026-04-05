@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathPath Academy | Pre-Algebra to Algebra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav">
+        <div class="logo">📘 MathPath Academy</div>
+        <div class="nav-links">
+          <a href="#classes">Classes</a>
+          <a href="#lesson-viewer">Lesson Viewer</a>
+          <a href="#practice">Practice</a>
+          <a href="#roadmap">Roadmap</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Learn math step by step — even if you feel behind</h1>
+        <p>
+          Start with pre-algebra basics and build up to algebra confidence.
+          Click into any class for a mini lesson, examples, and a "what to do
+          next" action plan.
+        </p>
+        <a class="btn" href="#classes">Start Learning</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="classes">
+        <h2>Class Tracks</h2>
+        <p class="section-subtitle">
+          Click <strong>Open lesson</strong> on any card to load it in the lesson
+          viewer below.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Class 1: Number Skills</h3>
+            <p>
+              Integers, positives/negatives, order of operations, and mental
+              math habits.
+            </p>
+            <ul>
+              <li>Compare and order numbers</li>
+              <li>Use PEMDAS without panic</li>
+              <li>Check answers quickly</li>
+            </ul>
+            <button class="btn lesson-btn" data-lesson-id="0">Open lesson</button>
+          </article>
+
+          <article class="card">
+            <h3>Class 2: Fractions, Decimals & Percents</h3>
+            <p>Convert between forms and solve real-life percentage problems.</p>
+            <ul>
+              <li>Fraction simplification</li>
+              <li>Percent increase/decrease</li>
+              <li>Word problem strategies</li>
+            </ul>
+            <button class="btn lesson-btn" data-lesson-id="1">Open lesson</button>
+          </article>
+
+          <article class="card">
+            <h3>Class 3: Variables & Expressions</h3>
+            <p>
+              Understand what variables mean and how to evaluate expressions.
+            </p>
+            <ul>
+              <li>Translate words to expressions</li>
+              <li>Substitute values for variables</li>
+              <li>Combine like terms</li>
+            </ul>
+            <button class="btn lesson-btn" data-lesson-id="2">Open lesson</button>
+          </article>
+
+          <article class="card">
+            <h3>Class 4: Equations Basics</h3>
+            <p>Solve one-step and two-step equations using balancing logic.</p>
+            <ul>
+              <li>Inverse operations</li>
+              <li>Equation checking</li>
+              <li>Simple equation word problems</li>
+            </ul>
+            <button class="btn lesson-btn" data-lesson-id="3">Open lesson</button>
+          </article>
+
+          <article class="card">
+            <h3>Class 5: Graphing & Linear Equations</h3>
+            <p>
+              Read coordinate graphs, use slope-intercept form, and identify
+              patterns.
+            </p>
+            <ul>
+              <li>Plot points correctly</li>
+              <li>Understand slope and intercept</li>
+              <li>Model real-life trends</li>
+            </ul>
+            <button class="btn lesson-btn" data-lesson-id="4">Open lesson</button>
+          </article>
+
+          <article class="card">
+            <h3>Class 6: Algebra Confidence Lab</h3>
+            <p>
+              Mixed review, challenge sets, and progress feedback to lock in
+              skills.
+            </p>
+            <ul>
+              <li>Target weak topics</li>
+              <li>Timed confidence drills</li>
+              <li>Final readiness checklist</li>
+            </ul>
+            <button class="btn lesson-btn" data-lesson-id="5">Open lesson</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="lesson-viewer">
+        <h2>Interactive Lesson Viewer</h2>
+        <p class="section-subtitle">
+          This section updates when you click a class card.
+        </p>
+
+        <div class="lesson-viewer-box">
+          <p class="lesson-kicker" id="lesson-kicker">Class 1 of 6</p>
+          <h3 id="lesson-title">Number Skills</h3>
+          <p id="lesson-goal">
+            Build confidence with negatives, positives, and operation order.
+          </p>
+
+          <div class="lesson-block">
+            <h4>Quick Example</h4>
+            <p id="lesson-example">-3 + 8 = 5 because you move 8 steps right from -3.</p>
+          </div>
+
+          <div class="lesson-block">
+            <h4>Try This</h4>
+            <p id="lesson-try">Evaluate: 7 + 2 × (5 - 3)</p>
+          </div>
+
+          <div class="viewer-actions">
+            <button class="btn secondary" id="prev-lesson">Previous</button>
+            <button class="btn" id="next-lesson">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section muted" id="practice">
+        <h2>Quick Practice Corner</h2>
+        <p class="section-subtitle">
+          Work through multiple questions. Click <strong>Next question</strong>
+          to keep practicing.
+        </p>
+
+        <div class="practice-box">
+          <p id="question">Solve: 3x + 5 = 20</p>
+          <label for="answer">Your answer:</label>
+          <input id="answer" type="number" placeholder="Type a number" />
+
+          <div class="viewer-actions">
+            <button class="btn" id="check-btn">Check Answer</button>
+            <button class="btn secondary" id="next-question-btn">Next question</button>
+          </div>
+
+          <p id="feedback" aria-live="polite"></p>
+          <p id="score">Score: 0 correct out of 0 attempts.</p>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <h2>Your Learning Roadmap</h2>
+        <p class="section-subtitle">
+          Mark classes as complete to track your momentum.
+        </p>
+
+        <div class="roadmap">
+          <label><input type="checkbox" class="progress" /> Number Skills</label>
+          <label
+            ><input type="checkbox" class="progress" /> Fractions, Decimals &
+            Percents</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Variables &
+            Expressions</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Equations Basics</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Graphing & Linear
+            Equations</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Algebra Confidence
+            Lab</label
+          >
+        </div>
+
+        <p id="progress-text">You have completed 0/6 classes.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        You don’t have to be “good at math” to improve — you just need a clear
+        path and consistent practice.
+      </p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
