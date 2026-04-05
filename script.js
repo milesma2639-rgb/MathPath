@@ -1,35 +1,8 @@
-const practiceQuestions = [
-  { question: 'Solve: 3x + 5 = 20', answer: 5, hint: 'Subtract 5 first, then divide by 3.' },
-  { question: 'Solve: y/4 = 3', answer: 12, hint: 'Multiply both sides by 4.' },
-  { question: 'Evaluate: 2(6 - 1)', answer: 10, hint: 'Do parentheses first.' },
-  { question: 'Solve: 7 + n = 15', answer: 8, hint: 'Subtract 7 from both sides.' }
-];
-
 const checkBtn = document.getElementById('check-btn');
-const nextQuestionBtn = document.getElementById('next-question-btn');
-const questionEl = document.getElementById('question');
 const answerInput = document.getElementById('answer');
 const feedback = document.getElementById('feedback');
-const scoreEl = document.getElementById('score');
-
 const progressBoxes = document.querySelectorAll('.progress');
 const progressText = document.getElementById('progress-text');
-
-let currentQuestion = 0;
-let correctAnswers = 0;
-let attempts = 0;
-
-function showQuestion(index) {
-  const item = practiceQuestions[index];
-  questionEl.textContent = item.question;
-  answerInput.value = '';
-  feedback.textContent = '';
-  feedback.className = '';
-}
-
-function updateScore() {
-  scoreEl.textContent = `Score: ${correctAnswers} correct out of ${attempts} attempts.`;
-}
 
 function updateProgress() {
   const total = progressBoxes.length;
@@ -62,32 +35,21 @@ function loadProgress() {
 }
 
 checkBtn.addEventListener('click', () => {
-  const rawValue = answerInput.value.trim();
-  if (rawValue === '') {
-    feedback.textContent = 'Enter an answer first.';
+  const studentAnswer = Number(answerInput.value);
+
+  if (answerInput.value.trim() === '') {
+    feedback.textContent = 'Enter an answer first, then try again.';
     feedback.className = 'bad';
     return;
   }
 
-  const studentAnswer = Number(rawValue);
-  const activeQuestion = practiceQuestions[currentQuestion];
-  attempts += 1;
-
-  if (studentAnswer === activeQuestion.answer) {
-    correctAnswers += 1;
-    feedback.textContent = 'Correct ✅';
+  if (studentAnswer === 5) {
+    feedback.textContent = 'Great job! x = 5 is correct ✅';
     feedback.className = 'good';
   } else {
-    feedback.textContent = `Not quite. Hint: ${activeQuestion.hint}`;
+    feedback.textContent = 'Nice try. Hint: subtract 5 first, then divide by 3.';
     feedback.className = 'bad';
   }
-
-  updateScore();
-});
-
-nextQuestionBtn.addEventListener('click', () => {
-  currentQuestion = (currentQuestion + 1) % practiceQuestions.length;
-  showQuestion(currentQuestion);
 });
 
 progressBoxes.forEach((box) => {
@@ -95,6 +57,4 @@ progressBoxes.forEach((box) => {
 });
 
 loadProgress();
-showQuestion(currentQuestion);
 updateProgress();
-updateScore();

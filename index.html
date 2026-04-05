@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MathPath Academy | Learn Pre-Algebra to Algebra</title>
+    <title>MathPath Academy | Pre-Algebra to Algebra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,95 +24,139 @@
       </nav>
 
       <div class="hero-content">
-        <h1>Welcome to your math learning platform</h1>
+        <h1>Learn math step by step — even if you feel behind</h1>
         <p>
-          Click into class pages, read mini lessons, and solve problems step by
-          step — from pre-algebra to algebra.
+          Start with pre-algebra basics and build up to algebra confidence.
+          Short lessons, simple examples, and supportive practice made for
+          beginners.
         </p>
-        <a class="btn" href="lesson.html?class=0">Enter Class 1</a>
+        <a class="btn" href="#classes">Start Learning</a>
       </div>
     </header>
 
     <main>
       <section class="section" id="classes">
-        <h2>Choose a Class</h2>
+        <h2>Class Tracks</h2>
         <p class="section-subtitle">
-          Every class opens its own lesson page with examples and a class quiz.
+          Follow these classes in order. Each class has a goal, clear examples,
+          and mini checks.
         </p>
-
         <div class="card-grid">
           <article class="card">
             <h3>Class 1: Number Skills</h3>
-            <p>Integers, negatives, positives, and order of operations.</p>
-            <a class="btn" href="lesson.html?class=0">Open Class 1</a>
+            <p>
+              Integers, positives/negatives, order of operations, and mental
+              math habits.
+            </p>
+            <ul>
+              <li>Compare and order numbers</li>
+              <li>Use PEMDAS without panic</li>
+              <li>Check answers quickly</li>
+            </ul>
           </article>
 
           <article class="card">
             <h3>Class 2: Fractions, Decimals & Percents</h3>
-            <p>Convert forms and solve percent problems with confidence.</p>
-            <a class="btn" href="lesson.html?class=1">Open Class 2</a>
+            <p>Convert between forms and solve real-life percentage problems.</p>
+            <ul>
+              <li>Fraction simplification</li>
+              <li>Percent increase/decrease</li>
+              <li>Word problem strategies</li>
+            </ul>
           </article>
 
           <article class="card">
             <h3>Class 3: Variables & Expressions</h3>
-            <p>Translate words to math and evaluate expressions correctly.</p>
-            <a class="btn" href="lesson.html?class=2">Open Class 3</a>
+            <p>
+              Understand what variables mean and how to evaluate expressions.
+            </p>
+            <ul>
+              <li>Translate words to expressions</li>
+              <li>Substitute values for variables</li>
+              <li>Combine like terms</li>
+            </ul>
           </article>
 
           <article class="card">
             <h3>Class 4: Equations Basics</h3>
             <p>Solve one-step and two-step equations using balancing logic.</p>
-            <a class="btn" href="lesson.html?class=3">Open Class 4</a>
+            <ul>
+              <li>Inverse operations</li>
+              <li>Equation checking</li>
+              <li>Simple equation word problems</li>
+            </ul>
           </article>
 
           <article class="card">
             <h3>Class 5: Graphing & Linear Equations</h3>
-            <p>Plot points, read slopes, and use linear equations.</p>
-            <a class="btn" href="lesson.html?class=4">Open Class 5</a>
+            <p>
+              Read coordinate graphs, use slope-intercept form, and identify
+              patterns.
+            </p>
+            <ul>
+              <li>Plot points correctly</li>
+              <li>Understand slope and intercept</li>
+              <li>Model real-life trends</li>
+            </ul>
           </article>
 
           <article class="card">
             <h3>Class 6: Algebra Confidence Lab</h3>
-            <p>Mixed review, challenge drills, and final readiness practice.</p>
-            <a class="btn" href="lesson.html?class=5">Open Class 6</a>
+            <p>
+              Mixed review, challenge sets, and progress feedback to lock in
+              skills.
+            </p>
+            <ul>
+              <li>Target weak topics</li>
+              <li>Timed confidence drills</li>
+              <li>Final readiness checklist</li>
+            </ul>
           </article>
         </div>
       </section>
 
       <section class="section muted" id="practice">
-        <h2>Practice Zone</h2>
+        <h2>Quick Practice Corner</h2>
         <p class="section-subtitle">
-          Do quick warm-up questions on the home page too.
+          Try this warm-up question. No pressure — mistakes are part of learning.
         </p>
 
         <div class="practice-box">
           <p id="question">Solve: 3x + 5 = 20</p>
-          <label for="answer">Your answer:</label>
+          <label for="answer">Your answer for x:</label>
           <input id="answer" type="number" placeholder="Type a number" />
-
-          <div class="viewer-actions">
-            <button class="btn" id="check-btn">Check</button>
-            <button class="btn secondary" id="next-question-btn">Next</button>
-          </div>
-
+          <button class="btn" id="check-btn">Check Answer</button>
           <p id="feedback" aria-live="polite"></p>
-          <p id="score">Score: 0 correct out of 0 attempts.</p>
         </div>
       </section>
 
       <section class="section" id="roadmap">
-        <h2>Your Roadmap</h2>
+        <h2>Your Learning Roadmap</h2>
         <p class="section-subtitle">
-          Mark classes complete as you finish each lesson page.
+          Mark classes as complete to track your momentum.
         </p>
 
         <div class="roadmap">
-          <label><input type="checkbox" class="progress" /> Class 1: Number Skills</label>
-          <label><input type="checkbox" class="progress" /> Class 2: Fractions/Decimals/Percents</label>
-          <label><input type="checkbox" class="progress" /> Class 3: Variables & Expressions</label>
-          <label><input type="checkbox" class="progress" /> Class 4: Equations Basics</label>
-          <label><input type="checkbox" class="progress" /> Class 5: Graphing & Linear Equations</label>
-          <label><input type="checkbox" class="progress" /> Class 6: Algebra Confidence Lab</label>
+          <label><input type="checkbox" class="progress" /> Number Skills</label>
+          <label
+            ><input type="checkbox" class="progress" /> Fractions, Decimals &
+            Percents</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Variables &
+            Expressions</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Equations Basics</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Graphing & Linear
+            Equations</label
+          >
+          <label
+            ><input type="checkbox" class="progress" /> Algebra Confidence
+            Lab</label
+          >
         </div>
 
         <p id="progress-text">You have completed 0/6 classes.</p>
@@ -120,7 +164,10 @@
     </main>
 
     <footer>
-      <p>Keep going. Consistency beats perfection in math.</p>
+      <p>
+        You don’t have to be “good at math” to improve — you just need a clear
+        path and practice.
+      </p>
       <a href="#top">Back to top ↑</a>
     </footer>
 

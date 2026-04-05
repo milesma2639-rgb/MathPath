@@ -7,7 +7,6 @@
   --muted: #eaf0ff;
   --good: #168f4a;
   --bad: #b32727;
-  --soft-border: #c7d5ff;
 }
 
 * {
@@ -43,7 +42,6 @@ body {
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -58,10 +56,6 @@ footer a {
   max-width: 720px;
   margin: 3rem auto 0;
   text-align: center;
-}
-
-.hero-content.left {
-  text-align: left;
 }
 
 .hero h1 {
@@ -89,20 +83,6 @@ footer a {
 
 .btn:hover {
   background: var(--accent-dark);
-}
-
-.secondary {
-  background: #e2e9ff;
-  color: #22396f;
-}
-
-.secondary:hover {
-  background: #d3deff;
-}
-
-.disabled-link {
-  pointer-events: none;
-  opacity: 0.55;
 }
 
 .section {
@@ -138,58 +118,23 @@ h2 {
   border-radius: 0.9rem;
   padding: 1rem;
   box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
 }
 
 .card h3 {
-  margin: 0;
+  margin-top: 0;
 }
 
-.lesson-kicker {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #3b548c;
-  font-weight: 700;
-}
-
-.lesson-viewer-box,
-.practice-box,
-.roadmap {
-  background: var(--card);
-  border-radius: 0.9rem;
-  padding: 1.2rem;
-  box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
-}
-
-.lesson-viewer-box {
-  max-width: 760px;
-  border: 1px solid var(--soft-border);
-}
-
-.lesson-block {
-  background: #f5f8ff;
-  border: 1px solid #d8e1ff;
-  border-radius: 0.75rem;
-  padding: 0.85rem;
-  margin-top: 0.85rem;
-}
-
-.lesson-block h3,
-.lesson-block h4 {
-  margin: 0 0 0.35rem;
-}
-
-.viewer-actions {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+.card ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
 }
 
 .practice-box {
-  max-width: 560px;
+  background: var(--card);
+  border-radius: 0.9rem;
+  padding: 1.2rem;
+  max-width: 520px;
+  box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
 }
 
 .practice-box input {
@@ -201,31 +146,28 @@ h2 {
   font-size: 1rem;
 }
 
-#feedback,
-#quiz-feedback {
+#feedback {
   min-height: 1.25rem;
-  margin: 0.9rem 0 0.2rem;
+  margin-top: 0.7rem;
   font-weight: 700;
 }
 
-.good {
+#feedback.good {
   color: var(--good);
 }
 
-.bad {
+#feedback.bad {
   color: var(--bad);
-}
-
-#score {
-  margin: 0;
-  color: #233c74;
-  font-weight: 600;
 }
 
 .roadmap {
   display: grid;
   gap: 0.55rem;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 0.9rem;
   max-width: 560px;
+  box-shadow: 0 10px 30px rgba(50, 83, 182, 0.08);
 }
 
 .roadmap label {
